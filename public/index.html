@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     <title>Queen Lisa</title>
-    <link rel="stylesheet" href="C:\Users\hp\OneDrive\Desktop\PORTFOLIO\styles.css">
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body class="main-container">
     <header class="about" id="lisa">
@@ -106,6 +106,32 @@
         <p id="answer"></p>
       </div>
     </section>
+    <section>
+      <div class="calculator">
+        <input placeholder="" type="text" id="result" disabled>
+        <div class="buttons">
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('+')">+</button>
+            
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('-')">-</button>
+
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('*')">*</button>
+
+            <button onclick="clearResult()">C</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendValue('/')">/</button>
+        </div>
+    </div>
+    </section>
   </body>
   <script>
     console.log("Hello World");
@@ -127,9 +153,6 @@
       const sum = parseInt(num1) + parseInt(num2);
       // alert("The sum of the two numbers is: " + sum);
       document.getElementById("answer").innerText = sum;
-    });
-    document.addEventListener("scroll", function () {
-      alert("someone is scrolling");
     });
 
   </script>

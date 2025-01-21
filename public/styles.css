@@ -94,6 +94,10 @@ footer {
     
 }
 
+/*calculator*/
+
+
+
 @media (max-width: 700px) {
   .main-container {
      flex-direction: column;
